@@ -389,10 +389,10 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên **t�
 
 Các features được sử dụng bao gồm:
 - **CYGNSS Data**: SR (Surface Reflectivity)
-- **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5)
+- **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5), SWIR1, SWIR2
 - **Environmental**: SM (Soil Moisture), LST (Land Surface Temperature), DEM
 - **Soil Properties**: Sand, Clay, Bulk Density
-- **Land Use**: LULC, SWIR1, SWIR2
+- **Land Use**: LULC
 
 *Kết quả chi tiết và bản đồ các tháng khác có trong `Mekong2025/Results/`*
 

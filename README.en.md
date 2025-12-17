@@ -389,10 +389,10 @@ Three machine learning models trained and evaluated on **test set (30% data)**:
 
 Features used include:
 - **CYGNSS Data**: SR (Surface Reflectivity)
-- **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5)
+- **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5), SWIR1, SWIR2
 - **Environmental**: SM (Soil Moisture), LST (Land Surface Temperature), DEM
 - **Soil Properties**: Sand, Clay, Bulk Density
-- **Land Use**: LULC, SWIR1, SWIR2
+- **Land Use**: LULC
 
 *Detailed results and additional monthly maps available in `Mekong2025/Results/`*
 
