@@ -396,6 +396,8 @@ Các features được sử dụng bao gồm:
 
 *Kết quả chi tiết và bản đồ các tháng khác có trong `Mekong2025/Results/`*
 
+> 📌 **Dữ liệu khác:** Nếu cần các dữ liệu bổ sung hoặc dữ liệu thô, vui lòng liên hệ qua email: **quanghieuminh14@gmail.com**
+
 ---
 
 ## 📚 Nguồn Dữ Liệu
