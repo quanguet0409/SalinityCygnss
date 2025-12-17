@@ -127,8 +127,6 @@ graph LR
 | Tính Năng | Mô Tả |
 |:-------:|:------------|
 | 💰 **Tiết Kiệm Chi Phí** | Giải pháp giám sát chi phí thấp sử dụng dữ liệu vệ tinh |
-| 📡 **Real-Time** | Bản đồ độ mặn cập nhật để hỗ trợ ra quyết định |
-| 🎯 **Độ Chính Xác Cao** | Độ phân giải không gian 30m cho phân tích chi tiết |
 | 🌾 **Hỗ Trợ Nông Nghiệp** | Công cụ quy hoạch cho nông dân và nhà hoạch định chính sách |
 
 </div>
