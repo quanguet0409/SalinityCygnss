@@ -2,7 +2,7 @@
 
 # 🌊 SalinityCygnss
 
-### Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy
+### Giám sát xâm nhập mặn bằng dữ liệu CYGNSS và Học Máy
 
 *Ứng dụng công nghệ GNSS-Reflectometry và Machine Learning để lập bản đồ xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
 
