@@ -1,10 +1,11 @@
 ﻿<div align="center">
 
-# 🌊 SalinityCygnss
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=SalinityCygnss&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%"/>
 
-### Giám sát xâm nhập mặn bằng dữ liệu CYGNSS và Học Máy
-
-*Ứng dụng công nghệ GNSS-Reflectometry và Machine Learning để lập bản đồ xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
+<h3>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&width=800&height=80&lines=Gi%C3%A1m+s%C3%A1t+x%C3%A2m+nh%E1%BA%ADp+m%E1%BA%B7n+b%E1%BA%B1ng+d%E1%BB%AF+li%E1%BB%87u+CYGNSS;H%E1%BB%8Dc+M%C3%A1y+%7C+Vi%E1%BB%85n+Th%C3%A1m+%7C+%C4%90%E1%BB%93ng+B%E1%BA%B1ng+S%C3%B4ng+C%E1%BB%ADu+Long" alt="Typing SVG" />
+</h3>
 
 <br>
 

@@ -1,10 +1,11 @@
 <div align="center">
 
-# 🌊 SalinityCygnss
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=SalinityCygnss&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%"/>
 
-### Monitoring Saline Intrusion Using CYGNSS Data and Machine Learning
-
-*Applying GNSS-Reflectometry technology and Machine Learning to map saline intrusion in the Mekong Delta*
+<h3>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&width=800&height=80&lines=Monitoring+Saline+Intrusion+Using+CYGNSS+Data;Machine+Learning+%7C+Remote+Sensing+%7C+Mekong+Delta" alt="Typing SVG" />
+</h3>
 
 <br>
 
