@@ -455,7 +455,7 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 ```bibtex
 @software{SalinityCygnss2025,
   author = {Phạm Minh Quang},
-  title = {SalinityCygnss: Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy},
+  title = {SalinityCygnss: Giám sát xâm nhập mặn bằng dữ liệu CYGNSS và Học Máy},
   year = {2025},
   publisher = {GitHub},
   url = {https://github.com/quanguet0409/SalinityCygnss}
