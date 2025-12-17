@@ -1,43 +1,86 @@
-# SalinityCygnss
-
 <div align="center">
 
-![CYGNSS](https://img.shields.io/badge/CYGNSS-Satellite%20Data-blue?style=for-the-badge)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Prediction-green?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-Jupyter-orange?style=for-the-badge)
+# 🌊 SalinityCygnss
 
-**Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy**
+### Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy
 
-*Ứng dụng công nghệ GNSS-R và Machine Learning để lập bản đồ xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
+*Ứng dụng công nghệ GNSS-Reflectometry và Machine Learning để lập bản đồ xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
 
----
+<br>
 
-[Giới Thiệu](#giới-thiệu) • [Quy Trình](#quy-trình-nghiên-cứu) • [Cài Đặt](#cài-đặt) • [Sử Dụng](#sử-dụng) • [Mô Hình](#các-mô-hình) • [Nguồn Dữ Liệu](#nguồn-dữ-liệu)
+[![CYGNSS](https://img.shields.io/badge/CYGNSS-Satellite%20Data-0066cc?style=for-the-badge&logo=satellite)](https://github.com/quanguet0409/SalinityCygnss)
+[![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest%20|%20XGBoost%20|%20CatBoost-00cc66?style=for-the-badge&logo=tensorflow)](https://github.com/quanguet0409/SalinityCygnss)
+[![Python](https://img.shields.io/badge/Python-3.8+-ff9900?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)](LICENSE)
+
+<br>
+
+**[📌 Giới Thiệu](#-giới-thiệu)** |
+**[🔄 Quy Trình](#-quy-trình-nghiên-cứu)** |
+**[🚀 Cài Đặt](#-cài-đặt)** |
+**[💻 Sử Dụng](#-sử-dụng)** |
+**[🤖 Mô Hình](#-các-mô-hình)** |
+**[📊 Kết Quả](#-kết-quả)** |
+**[📚 Nguồn Dữ Liệu](#-nguồn-dữ-liệu)**
 
 </div>
 
----
+<br>
+
+<div align="center">
 
 ## 📌 Giới Thiệu
 
-**SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến (Random Forest, XGBoost, CatBoost) để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
+</div>
 
-### Các Khu Vực Nghiên Cứu
+**SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
 
-- **Đồng Bằng Sông Cửu Long 2025** 
-- **Trà Vinh 2024** 
-- **Bến Tre 2020** 
-- **Bạc Liêu 2019** 
+<br>
 
-### Ý Nghĩa Nghiên Cứu
+<table align="center">
+<tr>
+<td align="center" width="25%">
+<b>🌾 ĐBSCL 2025</b><br>
+<sub>Nghiên cứu toàn diện<br>(5 tháng: 1-5/2025)</sub>
+</td>
+<td align="center" width="25%">
+<b>🌿 Trà Vinh 2024</b><br>
+<sub>Phân tích khu vực</sub>
+</td>
+<td align="center" width="25%">
+<b>🏞️ Bến Tre 2020</b><br>
+<sub>Dữ liệu so sánh</sub>
+</td>
+<td align="center" width="25%">
+<b>📍 Bạc Liêu 2019</b><br>
+<sub>Baseline</sub>
+</td>
+</tr>
+</table>
 
-Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSCL, ảnh hưởng trực tiếp đến 19 triệu dân và nguồn lương thực quốc gia. Dự án cung cấp:
-- Giải pháp giám sát, chi phí thấp
-- Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
+<br>
+
+### 🎯 Ý Nghĩa Nghiên Cứu
+
+> Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSCL, ảnh hưởng trực tiếp đến **19 triệu dân** và nguồn lương thực quốc gia.
+
+**Dự án cung cấp:**
+
+```diff
++ Giải pháp giám sát real-time, chi phí thấp
++ Bản đồ độ phân giải không gian cao (30m)
++ Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
+```
+
+<br>
 
 ---
 
+<div align="center">
+
 ## 🔄 Quy Trình Nghiên Cứu
+
+</div>
 
 <div align="center">
 
@@ -154,21 +197,33 @@ Xử lý đặc trưng phân loại tốt, hỗ trợ GPU, tốc độ dự đo�
 - **MAE** - Mean Absolute Error
 - **K-Fold Validation** - Kiểm định chéo
 
+<br>
+
 ---
+
+<div align="center">
 
 ## 📊 Kết Quả
 
-### Hiệu Suất Mô Hình
+</div>
 
-Ba mô hình machine learning được huấn luyện và đánh giá trên tập kiểm tra (30% dữ liệu) với các chỉ số:
+### 📈 Hiệu Suất Mô Hình
 
-| Chỉ Số | Ý Nghĩa | Giá Trị Tốt |
-|--------|---------|-------------|
-| **R** | Hệ số tương quan (Correlation Coefficient) | Càng gần 1 càng tốt |
-| **RMSE** | Sai số bình phương trung bình (Root Mean Square Error) | Càng nhỏ càng tốt |
-| **MAE** | Sai số tuyệt đối trung bình (Mean Absolute Error) | Càng nhỏ càng tốt |
+Ba mô hình machine learning được huấn luyện và đánh giá trên **tập kiểm tra (30% dữ liệu)**:
 
-### Bảng So Sánh Hiệu Suất Chi Tiết
+<div align="center">
+
+| 📊 Chỉ Số | 📝 Ý Nghĩa | ✅ Giá Trị Tốt |
+|:--------:|:-----------|:--------------:|
+| **R** | Hệ số tương quan | ↑ Càng gần 1 |
+| **RMSE** | Sai số bình phương trung bình | ↓ Càng nhỏ |
+| **MAE** | Sai số tuyệt đối trung bình | ↓ Càng nhỏ |
+
+</div>
+
+<br>
+
+### 🏆 Bảng So Sánh Hiệu Suất Chi Tiết
 
 <div align="center">
 
@@ -223,10 +278,16 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 
 > **Ghi chú**: 
 > - ⭐ = Mô hình tốt nhất (XGBoost có RMSE thấp nhất và R cao nhất trên tập kiểm tra)
-> - Kết quả trên là trung bình cho 5 tháng (1-5/2025)
-> - Dữ liệu: 70% huấn luyện, 30% kiểm tra
 
-### Dữ Liệu Trạm Đo Mặn Thực Địa
+<br>
+
+### 📍 Dữ Liệu Trạm Đo Mặn Thực Địa
+
+<div align="center">
+
+> 7 trạm đo mặn thực địa phân bố khắp Đồng Bằng Sông Cửu Long
+
+</div>
 
 <div align="center">
 
@@ -244,21 +305,41 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 
 </div>
 
-### Nhận Xét
+<br>
 
-- **XGBoost** cho kết quả tốt nhất với RMSE thấp nhất (2.55 dS/m) và R cao nhất (0.81) trên tập kiểm tra
-- **Random Forest** có độ ổn định cao nhưng RMSE cao hơn (2.73 dS/m)
-- **CatBoost** cân bằng giữa hiệu suất và thời gian huấn luyện
+### 💡 Nhận Xét
+
+<div align="center">
+
+| Mô Hình | Đánh Giá |
+|:-------:|:---------|
+| **XGBoost** 🥇 | Kết quả tốt nhất với RMSE thấp nhất (2.55 dS/m) và R cao nhất (0.81) |
+| **Random Forest** 🥈 | Độ ổn định cao nhưng RMSE cao hơn (2.73 dS/m) |
+| **CatBoost** 🥉 | Cân bằng giữa hiệu suất và thời gian huấn luyện |
+
+</div>
 
 
+
+<br>
 
 ---
 
+<div align="center">
+
 ## 🗺️ Bản Đồ Xâm Nhập Mặn
 
-### Theo Dõi Biến Đổi Theo Thời Gian (Tháng 1-5/2025)
+</div>
 
-Kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại ĐBSCL.
+### 📅 Theo Dõi Biến Đổi Theo Thời Gian (Tháng 1-5/2025)
+
+<div align="center">
+
+*Kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại ĐBSCL*
+
+**Nhấp vào từng mô hình để xem chi tiết**
+
+</div>
 
 <details>
 <summary><b>CatBoost - Nhấp để xem 5 tháng</b></summary>
