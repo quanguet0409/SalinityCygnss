@@ -39,7 +39,7 @@
 
 </div>
 
-**SalinityCygnss** leverages **CYGNSS (Cyclone Global Navigation Satellite System)** data - GNSS-Reflectometry technology combined with advanced **Machine Learning** algorithms to map and predict saline intrusion in the Mekong Delta.
+**SalinityCygnss** leverages **CYGNSS (Cyclone Global Navigation Satellite System)** data - GNSS-Reflectometry technology combined with advanced **Machine Learning** algorithms to map and monitor saline intrusion in the Mekong Delta.
 
 ### 📍 Study Areas
 
@@ -81,7 +81,7 @@
 
 <br>
 
-> 📍 **Features:** View monthly saline intrusion prediction maps, compare models, and explore field data
+> 📍 **Features:** View monthly saline intrusion monitoring maps, compare models, and explore field data
 
 </div>
 
@@ -347,7 +347,7 @@ Three machine learning models trained and evaluated on **test set**:
 
 <div align="center">
 
-*Saline intrusion predictions for the first 5 months of 2025 in the Mekong Delta*
+*Saline intrusion monitoring results for the first 5 months of 2025 in the Mekong Delta*
 
 **Click on each model to view details**
 
