@@ -18,16 +18,16 @@
 
 ---
 
-## Giới Thiệu
+## 📌 Giới Thiệu
 
 **SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến (Random Forest, XGBoost, CatBoost) để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
 
 ### Các Khu Vực Nghiên Cứu
 
-- **Đồng Bằng Sông Cửu Long 2025** - Nghiên cứu toàn diện (5 tháng: 1-5/2025)
-- **Trà Vinh 2024** - Phân tích khu vực
-- **Bến Tre 2020** - Dữ liệu so sánh
-- **Bạc Liêu 2019** - Baseline
+- **Đồng Bằng Sông Cửu Long 2025** 
+- **Trà Vinh 2024** 
+- **Bến Tre 2020** 
+- **Bạc Liêu 2019** 
 
 ### Ý Nghĩa Nghiên Cứu
 
@@ -38,11 +38,13 @@ Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSC
 
 ---
 
-## Quy Trình Nghiên Cứu
+## 🔄 Quy Trình Nghiên Cứu
 
 <div align="center">
 
 ![Sơ đồ quy trình](flowchart.png)
+
+*Hình 1: Quy trình nghiên cứu xâm nhập mặn sử dụng CYGNSS và Machine Learning*
 
 </div>
 
@@ -56,9 +58,9 @@ Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSC
    - Thổ nhưỡng: Sand, Clay, Bulk Density
    - Salinity Index: SI1-SI5
 
-2. **Dữ Liệu Thực Địa** → Đo điểm mặn thực địa EC (dS/m)
+2. **Dữ Liệu Thực Địa** → Đo điểm mặn thực địa EC (dS/m), Trạm đo quan trắc
 
-3. **Tiền Xử Lý** → Chuẩn hóa, tạo training/testing dataset (70/30)
+3. **Tiền Xử Lý** → Chuẩn hóa
 
 4. **Mô Hình Hóa** → Random Forest, XGBoost, CatBoost
 
@@ -68,7 +70,7 @@ Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSC
 
 ---
 
-## Cài Đặt
+## 🚀 Cài Đặt
 
 ### Yêu Cầu
 
@@ -90,7 +92,7 @@ pip install -r requirements.txt
 
 ---
 
-## Sử Dụng
+## 💻 Sử Dụng
 
 ### Chạy Mô Hình
 
@@ -110,7 +112,7 @@ Chọn một trong ba notebook:
 
 ---
 
-## Cấu Trúc Dự Án
+## 📂 Cấu Trúc Dự Án
 
 ```
 SalinityCygnss/
@@ -135,7 +137,7 @@ SalinityCygnss/
 
 ---
 
-## Các Mô Hình
+## 🤖 Các Mô Hình
 
 ### 1. Random Forest (RF)
 Tổng hợp nhiều cây quyết định, kháng overfitting, xử lý mối quan hệ phi tuyến.
@@ -155,16 +157,91 @@ Xử lý đặc trưng phân loại tốt, hỗ trợ GPU, tốc độ dự đo�
 
 ---
 
-## Kết Quả
+## 📊 Kết Quả
 
 ### Hiệu Suất Mô Hình
 
-Ba mô hình (RF, XGBoost, CatBoost) được đánh giá dựa trên:
-- **R (Correlation Coefficient)** - Hệ số tương quan
-- **RMSE (Root Mean Square Error)** - Sai số bình phương trung bình
-- **MAE (Mean Absolute Error)** - Sai số tuyệt đối trung bình
+Ba mô hình machine learning được huấn luyện và đánh giá trên tập kiểm tra (30% dữ liệu) với các chỉ số:
 
-### Bản Đồ Xâm Nhập Mặn (Tháng 1-5/2025)
+| Chỉ Số | Ý Nghĩa | Giá Trị Tốt |
+|--------|---------|-------------|
+| **R** | Hệ số tương quan (Correlation Coefficient) | Càng gần 1 càng tốt |
+| **RMSE** | Sai số bình phương trung bình (Root Mean Square Error) | Càng nhỏ càng tốt |
+| **MAE** | Sai số tuyệt đối trung bình (Mean Absolute Error) | Càng nhỏ càng tốt |
+
+### Bảng So Sánh Hiệu Suất Chi Tiết
+
+<div align="center">
+
+| Thời Điểm | Mô Hình | R ↑ | RMSE (dS/m) ↓ | MAE (dS/m) ↓ |
+|:---------:|:--------|:---:|:-------------:|:------------:|
+| **Tháng 1/2025** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 2/2025** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 3/2025** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 4/2025** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 5/2025** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| **Trung Bình** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+
+</div>
+
+> **Ghi chú**: 
+> - ⭐ = Mô hình tốt nhất (dựa vào kết quả thực tế)
+> - ↑ = Giá trị càng cao càng tốt
+> - ↓ = Giá trị càng thấp càng tốt
+> - Các giá trị **X.XX** cần được cập nhật từ kết quả trong notebooks (xem file `Mekong2025/Model/*.ipynb`)
+
+### Nhận Xét
+
+- **CatBoost** thường cho kết quả tốt nhất nhờ khả năng xử lý categorical features và regularization tự động
+- **XGBoost** cân bằng giữa tốc độ và hiệu suất
+- **Random Forest** có độ ổn định cao và dễ tùy chỉnh
+
+
+
+#### Bảng So Sánh Hiệu Suất
+
+| Tháng | Mô Hình | R | RMSE (dS/m) | MAE (dS/m) |
+|-------|---------|-------|-------------|-----------|
+| **Tháng 1** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 2** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 3** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 4** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
+| **Tháng 5** | Random Forest | 0.XX | X.XX | X.XX |
+| | XGBoost | 0.XX | X.XX | X.XX |
+| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
+
+> **Lưu ý**: Cập nhật các giá trị R, RMSE, MAE từ kết quả thực tế trong notebooks hoặc file kết quả của bạn.
+> Mô hình tốt nhất: **R cao nhất**, **RMSE và MAE thấp nhất**.
+
+
+
+---
+
+## 🗺️ Bản Đồ Xâm Nhập Mặn
+
+### Theo Dõi Biến Đổi Theo Thời Gian (Tháng 1-5/2025)
+
+Carousel dưới đây hiển thị kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại ĐBSCL.
 
 #### CatBoost
 
@@ -208,7 +285,7 @@ Ba mô hình (RF, XGBoost, CatBoost) được đánh giá dựa trên:
 ![Tháng 5](XGB_5.jpg)
 ````
 
-### Features Quan Trọng
+### 🎯 Features Quan Trọng
 
 Các features được sử dụng bao gồm:
 - **CYGNSS Data**: SR (Surface Reflectivity)
@@ -221,7 +298,7 @@ Các features được sử dụng bao gồm:
 
 ---
 
-## Nguồn Dữ Liệu
+## 📚 Nguồn Dữ Liệu
 
 <div align="center">
 
@@ -250,13 +327,13 @@ Mô hình số độ cao (DEM) • Sử dụng đất/lớp phủ • Tính ch�
 
 ---
 
-## Giấy Phép
+## 📜 Giấy Phép
 
 Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 
 ---
 
-## Liên Hệ
+## 📧 Liên Hệ
 
 **Tác Giả**: Phạm Minh Quang  
 **Email**: quanghieuminh14@gmail.com  
@@ -266,7 +343,7 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 
 ---
 
-## Lời Cảm Ơn
+## 🙏 Lời Cảm Ơn
 
 - NASA CYGNSS mission
 - TS. Hà Minh Cường và ThS. Hoàng Tích Phúc
@@ -275,7 +352,7 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 
 ---
 
-## Trích Dẫn
+## 📖 Trích Dẫn
 
 ```bibtex
 @software{SalinityCygnss2025,
