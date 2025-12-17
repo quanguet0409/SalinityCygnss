@@ -220,7 +220,7 @@ Excellent categorical feature handling, GPU support, fast prediction speed.
 
 ### 📈 Model Performance
 
-Three machine learning models trained and evaluated on **test set (30% data)**:
+Three machine learning models trained and evaluated on **test set**:
 
 <div align="center">
 

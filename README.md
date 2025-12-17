@@ -220,7 +220,7 @@ Xử lý đặc trưng phân loại tốt, hỗ trợ GPU, tốc độ dự đo�
 
 ### 📈 Hiệu Suất Mô Hình
 
-Ba mô hình machine learning được huấn luyện và đánh giá trên **tập kiểm tra (30% dữ liệu)**:
+Ba mô hình machine learning được huấn luyện và đánh giá trên **tập kiểm tra**:
 
 <div align="center">
 
