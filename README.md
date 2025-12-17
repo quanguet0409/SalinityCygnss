@@ -67,8 +67,7 @@
 **Dự án cung cấp:**
 
 ```diff
-+ Giải pháp giám sát real-time, chi phí thấp
-+ Bản đồ độ phân giải không gian cao (30m)
++ Giải pháp giám sát, chi phí thấp
 + Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
 ```
 
@@ -401,12 +400,10 @@ Trường Đại Học Công Nghệ - Đại Học Quốc Gia Hà Nội
 ### Dữ Liệu Chính
 
 **Dữ Liệu CYGNSS**
-- Nguồn: NASA CYGNSS Level 1 Science Data Record
 - Cung cấp: **ThS. Hoàng Tích Phúc** - phucth@vnu.edu.vn
 - Đơn vị: Viện Công Nghệ Hàng Không Vũ Trụ - ĐH Công Nghệ - ĐHQG Hà Nội
 
 **Dữ Liệu Điểm Mặn Thực Địa**
-- Đo đạc hiện trường và phân tích phòng thí nghiệm
 - Cung cấp: **TS. Hà Minh Cường** - cuonghm@vnu.edu.vn
 - Đơn vị: Viện Công Nghệ Hàng Không Vũ Trụ - ĐH Công Nghệ - ĐHQG Hà Nội
 
@@ -433,11 +430,8 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 ---
 
 ## 🙏 Lời Cảm Ơn
-
-- NASA CYGNSS mission
 - TS. Hà Minh Cường và ThS. Hoàng Tích Phúc
 - Viện Công Nghệ Hàng Không Vũ Trụ - ĐH Công Nghệ - ĐHQG Hà Nội
-- Đội ngũ thực địa và cộng đồng mã nguồn mở
 
 ---
 
