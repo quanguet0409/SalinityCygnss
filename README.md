@@ -173,40 +173,43 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 
 <div align="center">
 
-| Thời Điểm | Mô Hình | R ↑ | RMSE (dS/m) ↓ | MAE (dS/m) ↓ |
-|:---------:|:--------|:---:|:-------------:|:------------:|
-| **Tháng 1/2025** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 2/2025** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 3/2025** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 4/2025** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 5/2025** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
-| **Trung Bình** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** ⭐ | **0.XX** | **X.XX** | **X.XX** |
+| Thuật toán | Tập huấn luyện ||| Tập kiểm tra |||
+|:--------|:---:|:---:|:---:|:---:|:---:|:---:|
+| | **RMSE (dS/m)** | **MAE (dS/m)** | **R** | **RMSE (dS/m)** | **MAE (dS/m)** | **R** |
+| Random Forest | 1.59 | 0.77 | 0.94 | 2.73 | 1.37 | 0.78 |
+| XGBoost | 1.37 | 0.69 | 0.95 | 2.55 | 1.31 | 0.81 |
+| **CatBoost** ⭐ | **1.72** | **0.96** | **0.94** | **2.65** | **1.36** | **0.80** |
 
 </div>
 
 > **Ghi chú**: 
-> - ⭐ = Mô hình tốt nhất (dựa vào kết quả thực tế)
-> - ↑ = Giá trị càng cao càng tốt
-> - ↓ = Giá trị càng thấp càng tốt
-> - Các giá trị **X.XX** cần được cập nhật từ kết quả trong notebooks (xem file `Mekong2025/Model/*.ipynb`)
+> - ⭐ = Mô hình tốt nhất (XGBoost có RMSE thấp nhất và R cao nhất trên tập kiểm tra)
+> - Kết quả trên là trung bình cho 5 tháng (1-5/2025)
+> - Dữ liệu: 70% huấn luyện, 30% kiểm tra
+
+### Dữ Liệu Trạm Đo Mặn Thực Địa
+
+<div align="center">
+
+| Tên Trạm | Tỉnh/Phương | Tháng 1 | Tháng 2 | Tháng 3 | Tháng 4 | Tháng 5 |
+|:----------|:------------|:--------:|:--------:|:--------:|:--------:|:--------:|
+| Tuyên Nhơn | Long An | 0.033 | 0.2 | 0.37 | 0.23 | 0.2 |
+| Bến Trại | Bến Tre | 18.5 | 18.67 | 23.43 | 18.73 | 19.6 |
+| Đại Ngãi | Sóc Trăng | 3.4 | 6.77 | 7.37 | 4.6 | 1.9 |
+| Gò Quao | Kiên Giang | 2.3 | 3.73 | 2.33 | 4.33 | 3.6 |
+| Văm Kénh | Tiền Giang | 21.43 | 21.53 | 21.8 | 20.2 | 17.6 |
+| Trà Kha | Trà Vinh | 15.6 | 17.97 | 16.23 | 13.03 | 12.1 |
+| Sông Đốc | Cà Mau | 30.2 | 31 | 33.47 | 33.77 | 34.3 |
+
+*Bảng: Giá trị đo mặn tại các trạm (dS/m)*
+
+</div>
 
 ### Nhận Xét
 
-- **CatBoost** thường cho kết quả tốt nhất nhờ khả năng xử lý categorical features và regularization tự động
-- **XGBoost** cân bằng giữa tốc độ và hiệu suất
-- **Random Forest** có độ ổn định cao và dễ tùy chỉnh
+- **XGBoost** cho kết quả tốt nhất với RMSE thấp nhất (2.55 dS/m) và R cao nhất (0.81) trên tập kiểm tra
+- **Random Forest** có độ ổn định cao nhưng RMSE cao hơn (2.73 dS/m)
+- **CatBoost** cân bằng giữa hiệu suất và thời gian huấn luyện
 
 
 
@@ -241,49 +244,40 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 
 ### Theo Dõi Biến Đổi Theo Thời Gian (Tháng 1-5/2025)
 
-Carousel dưới đây hiển thị kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại ĐBSCL.
+Kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại ĐBSCL.
 
-#### CatBoost
+<details>
+<summary><b>CatBoost - Nhấp để xem 5 tháng</b></summary>
 
-````carousel
 ![Tháng 1](CB_1.jpg)
-<!-- slide -->
 ![Tháng 2](CB_2.jpg)
-<!-- slide -->
 ![Tháng 3](CB_3.jpg)
-<!-- slide -->
 ![Tháng 4](CB_4.jpg)
-<!-- slide -->
 ![Tháng 5](CB_5.jpg)
-````
 
-#### Random Forest
+</details>
 
-````carousel
+<details>
+<summary><b>Random Forest - Nhấp để xem 5 tháng</b></summary>
+
 ![Tháng 1](RF_1.jpg)
-<!-- slide -->
 ![Tháng 2](RF_2.jpg)
-<!-- slide -->
 ![Tháng 3](RF_3.jpg)
-<!-- slide -->
 ![Tháng 4](RF_4.jpg)
-<!-- slide -->
 ![Tháng 5](RF_5.jpg)
-````
 
-#### XGBoost
+</details>
 
-````carousel
+<details>
+<summary><b>XGBoost - Nhấp để xem 5 tháng</b></summary>
+
 ![Tháng 1](XGB_1.jpg)
-<!-- slide -->
 ![Tháng 2](XGB_2.jpg)
-<!-- slide -->
 ![Tháng 3](XGB_3.jpg)
-<!-- slide -->
 ![Tháng 4](XGB_4.jpg)
-<!-- slide -->
 ![Tháng 5](XGB_5.jpg)
-````
+
+</details>
 
 ### 🎯 Features Quan Trọng
 
