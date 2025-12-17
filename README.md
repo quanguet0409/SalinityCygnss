@@ -359,11 +359,3 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 ```
 
 ---
-
-<div align="center">
-
-⭐ **Nếu thấy hữu ích, hãy cho repo một ngôi sao!** ⭐
-
-*Phát triển vì nông nghiệp bền vững tại Đồng Bằng Sông Cửu Long*
-
-</div>
