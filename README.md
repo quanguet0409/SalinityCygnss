@@ -16,6 +16,7 @@
 <br>
 
 **[📌 Giới Thiệu](#-giới-thiệu)** |
+**[🌐 Demo App](#-demo-app)** |
 **[🔄 Quy Trình](#-quy-trình-nghiên-cứu)** |
 **[🚀 Cài Đặt](#-cài-đặt)** |
 **[💻 Sử Dụng](#-sử-dụng)** |
@@ -52,6 +53,32 @@
 + Giải pháp giám sát, chi phí thấp
 + Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
 ```
+
+<br>
+
+---
+
+<div align="center">
+
+## 🌐 Demo App
+
+</div>
+
+<div align="center">
+
+### 🚀 Trải Nghiệm Ngay
+
+**Xem bản đồ xâm nhập mặn tương tác trên Google Earth Engine**
+
+<br>
+
+[![Demo App](https://img.shields.io/badge/🌍_Xem_Demo_App-Earth_Engine-4285F4?style=for-the-badge&logo=google-earth&logoColor=white)](https://ee-hanoi688.projects.earthengine.app/view/soil-salinity)
+
+<br>
+
+> 📍 **Chức năng:** Xem bản đồ dự đoán xâm nhập mặn theo tháng, so sánh các mô hình, và khám phá dữ liệu thực địa
+
+</div>
 
 <br>
 
