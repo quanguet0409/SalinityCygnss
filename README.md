@@ -37,22 +37,12 @@
 
 <br>
 
-<table align="center">
-<tr>
-<td align="center" width="25%">
-<b>ĐBSCL 2025</b><br>
-</td>
-<td align="center" width="25%">
-<b>Trà Vinh 2024</b><br>
-</td>
-<td align="center" width="25%">
-<b>Bến Tre 2020</b><br>
-</td>
-<td align="center" width="25%">
-<b>Bạc Liêu 2019</b><br>
-</td>
-</tr>
-</table>
+### 📍 Các Khu Vực Nghiên Cứu
+
+1. **ĐBSCL 2025** 
+2. **Trà Vinh 2024** 
+3. **Bến Tre 2020** 
+4. **Bạc Liêu 2019** 
 
 <br>
 
