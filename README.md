@@ -34,20 +34,19 @@
 </div>
 
 **SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
-<br>
 
 ### 📍 Các Khu Vực Nghiên Cứu
+
 1. **ĐBSCL 2025** 
 2. **Trà Vinh 2024** 
 3. **Bến Tre 2020** 
-4. **Bạc Liêu 2019** 
-<br>
+4. **Bạc Liêu 2019**
 
 ### 🎯 Ý Nghĩa Nghiên Cứu
 
 > Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSCL, ảnh hưởng trực tiếp đến **19 triệu dân** và nguồn lương thực quốc gia.
 
-**Dự án cung cấp:**
+**Nghiên cứu cung cấp:**
 
 ```diff
 + Giải pháp giám sát, chi phí thấp
@@ -120,15 +119,14 @@ pip install -r requirements.txt
 
 ### Chạy Mô Hình
 
-```bash
-cd Mekong2025/Model
-jupyter notebook
-```
+1. Mở Jupyter Notebook tương ứng:
+   ```bash
+   jupyter notebook Mekong2025/Model/XGB.ipynb
+   ```
 
-Chọn một trong ba notebook:
-- `RF.ipynb` - Random Forest
-- `XGB.ipynb` - XGBoost  
-- `CB.ipynb` - CatBoost
+2. Chạy từng cell theo thứ tự
+
+3. Kết quả dự đoán sẽ được lưu trong `Model Results/`
 
 ### Quy Trình Trong Notebook
 
@@ -136,7 +134,7 @@ Chọn một trong ba notebook:
 
 ---
 
-## 📂 Cấu Trúc Dự Án
+## 📂 Cấu Trúc Nghiên Cứu
 
 ```
 SalinityCygnss/
